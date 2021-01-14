@@ -34,10 +34,12 @@ An address provider returns addresses only with concatenated street names and nu
 # SOLUTION
 
 It requires the Python interpreter, version 3.6+, and is not platform specific. It should work on Unix, 
-on Windows or on macOS.\
-The solution being used tries to extract the Street name and house number using regular expressions.\
+on Windows or on macOS.
+
+The solution being used tries to extract the Street name and house number using regular expressions.
+
 Are being used 3 different regular expressions to try to extract the corresponding address components.\
-They are evaluated one at a tame, and when one regex matches against the input address line, it's not necessary 
+They are evaluated one at a time, and when one regex matches against the input address line, it's not necessary 
 continue evaluating the ones that have not been used yet:
 
 ## Regex I
@@ -132,3 +134,8 @@ python3 -m venv venv
 Once installed the dependencies, is only necessary to execute "tox", and it will take care of run 
 "flake8", "pylint", "mypy" and the tests using "pytest":\
 `tox`
+
+If the tests run successfully, in a directory named "htmlcov", will be created html files with the test coverage report 
+and in the terminal will appear something like the following:
+![alt text](https://github.com/reynierg/addressline/blob/main/images/TestExecutionResult.jpg "Test Coverage Results")
+
