@@ -100,7 +100,7 @@ Execute the following:\
 
 # EXAMPLES
 I- Parse the address "Königsbrücker Str. 21 - 29":\
-`python bin/addressline.py 'Königsbrücker Str. 21 - 29'`
+`python3 bin/addressline.py 'Königsbrücker Str. 21 - 29'`
   
 Output:
 ```
@@ -109,7 +109,7 @@ Output: {'street': 'Königsbrücker Str.', 'housenumber': '21 - 29'}
 ```
 
 II- Parse the address "4, rue de la revolution":\
-`python bin/addressline.py '4, rue de la revolution'`
+`python3 bin/addressline.py '4, rue de la revolution'`
   
 Output:
 ```
@@ -138,4 +138,3 @@ Once installed the dependencies, is only necessary to execute "tox", and it will
 If the tests run successfully, in a directory named "htmlcov", will be created html files with the test coverage report 
 and in the terminal will appear something like the following:
 ![alt text](https://github.com/reynierg/addressline/blob/main/images/TestExecutionResult.jpg "Test Coverage Results")
-
