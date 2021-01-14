@@ -33,8 +33,8 @@ An address provider returns addresses only with concatenated street names and nu
 
 # SOLUTION
 
-It requires the Python interpreter, version 3.6+, and is not platform specific. It should work on Unix, 
-on Windows or on macOS.
+It requires the Python interpreter, have been tested with version 3.6.9, and is not platform specific. It should work 
+on Unix, on Windows or on macOS.
 
 The solution being used tries to extract the Street name and house number using regular expressions.
 
