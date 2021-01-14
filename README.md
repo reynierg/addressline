@@ -42,7 +42,7 @@ continue evaluating the ones that have not been used yet:
 
 ## Regex I
 
-`^(?P<street>[a-zA-ZäöüÄÖÜẞß]+(?:\s[a-zA-ZäöüÄÖÜẞß]+)*\.?)\,?\s(?P<number>(?:(?:\d)+\s?[a-zA-Z]{0,1})|(?:\d+\s?-\s?\d+))$`
+`^(?P<street>[a-zA-ZäöüÄÖÜẞß]+(?:(?:\s|-)[a-zA-ZäöüÄÖÜẞß]+)*\.?)\,?\s(?P<number>(?:(?:\d)+\s?[a-zA-Z]{0,1})|(?:\d+\s?-\s?\d+))$`
 
 It will match addresses with the following format between others:
 - Winterallee 3
