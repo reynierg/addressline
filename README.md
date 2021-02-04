@@ -82,7 +82,7 @@ the following dependencies are required:
 - flake8
 - pylint
 - mypy
-- pydev
+- pytest
 
 # RUN
 Clone the project executing the following command in a terminal:\
